@@ -13,6 +13,9 @@ h1{
     font-family: 'Alfa Slab One', sans-serif;
 
 }
+a{
+    text-decoration: none;
+}
 #clock {
     position:absolute;
     bottom:10px;
@@ -54,15 +57,16 @@ BOOKMARKS
     padding:30px;
     clear:both;
 }
-.bookmarks a{
+.bookmarks i{
     font-size:24px;
     margin:0 30px;
     color:#000;
     line-height:32px;
     transition:.2s;
     text-decoration:none;
+    cursor: pointer;
 }
-.bookmarks a:hover{
+.bookmarks i:hover{
     color:#000;
     font-size:28px;
     line-height:26px;
@@ -98,6 +102,8 @@ POST-IT NOTE
     left:50px;
     font-family:sans-serif;
     outline:none;
+    transition:.2s;
+    opacity:0;
 }
 
 .hover{

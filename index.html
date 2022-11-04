@@ -39,16 +39,21 @@
             <a href="http://mail.google.com" target="_blank">
                 <i class="fab fa-google-drive"></i>
             </a>
-            <a href="" target="_blank">
-                <i class="fas fa-sticky-note"></i>
-            </a>
+
+            <i class="fas fa-sticky-note" onclick="showNote()"></i>
+            <i class="fas fa-calculator"></i>
+
         </section>
 
         <iframe class="calculator hover" width="219" height="302" src="http://calculator-1.com/outdoor/?f=ffca39&r=ffffff" scrolling="no" frameborder="0"></iframe>
     
         <div id="clock"></div>
 
-        <textarea placeholder="Write a note..." id="note" class="hover" onkeyup="autoSave()"></textarea>
+             
+            <textarea placeholder="Write a note..." id="note" class="" onkeyup="autoSave()">
+                <i class="fas fa-times-circle exit-note"></i>   
+            </textarea>
+
 
         <script src="myScripts.js" async defer></script>
     </body>
