@@ -107,14 +107,7 @@ POST-IT NOTE
     opacity:0;
 }
 
-.hover{
-    transition:.2s;
-    opacity:0;
-}
 
-.hover:hover{
-    opacity:1;
-}
 
 #calc{
     transition:.2s;
