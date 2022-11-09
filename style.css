@@ -145,6 +145,7 @@ TWITTER
     top:10px;
     right:10px;
     cursor:pointer;
+    color:#999;
 }
 
 
@@ -164,5 +165,8 @@ TWITTER
     }
     .bookmarks i{
     margin:0 15px;
+    }
+    .twitter-wrapper{
+        padding-top:40px;
     }
 }
