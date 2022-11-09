@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Homepage</title>
+        <title>Mike's Homepage</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -39,7 +39,7 @@
             <a href="http://mail.google.com" target="_blank">
                 <i class="fab fa-google-drive"></i>
             </a>
-
+            <i class="fab fa-twitter" onclick="showTwitter()"></i>
             <i class="fas fa-sticky-note" onclick="showNote()"></i>
             <i class="fas fa-calculator" onclick="showCalculator()"></i>
 
@@ -47,13 +47,17 @@
 
         <iframe class="calculator hover" id="calc" width="219" height="302" src="http://calculator-1.com/outdoor/?f=ffca39&r=ffffff" scrolling="no" frameborder="0"></iframe>
     
-        <div id="clock"></div>
+        
 
              
-            <textarea placeholder="Write a note..." id="note" class="" onkeyup="autoSave()">
-                <i class="fas fa-times-circle exit-note"></i>   
-            </textarea>
+        <textarea placeholder="Write a note..." id="note" class="" onkeyup="autoSave()">
+            <i class="fas fa-times-circle exit-note"></i>   
+        </textarea>
 
+        <div class="twitter-wrapper" id="tweet">
+            <i class="far fa-times-circle exit" onclick="hideTweet()"></i>
+            <a class="twitter-timeline" href="https://twitter.com/mjmacfadden/lists/1576542010093232129?ref_src=twsrc%5Etfw">...loading</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
         <script src="myScripts.js" async defer></script>
     </body>

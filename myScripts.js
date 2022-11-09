@@ -38,8 +38,7 @@ function showNote(){
     }
  }
 
- //CALCULATOR (JAVASCRIPT)
-
+//CALCULATOR (JAVASCRIPT)
 var showCalc = false;
 function showCalculator(){
     if (showCalc == false){
@@ -52,4 +51,20 @@ function showCalculator(){
     }
  }
 
- 
+ //TWITTER
+var showTweet = false;
+function showTwitter(){
+    if (showTweet == false){
+        document.getElementById("tweet").style.opacity = 1;
+        document.getElementById("tweet").style.zIndex = 1;
+        showTweet = true;
+    }
+ }
+
+ function hideTweet(){
+    if (showTweet == true){
+        document.getElementById("tweet").style.opacity = 0;
+        document.getElementById("tweet").style.zIndex = -1;
+        showTweet = false;
+    }
+ }
