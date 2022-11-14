@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jackie's Homepage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    </head>
+    <body onload="startTime()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/?unit=us" data-label_1="GLENVIEW" data-label_2="WEATHER" >GLENVIEW WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        <h1>Hi Jackie!</h1>
+        <!-- GOOGLE SEARCH -->
+        <form action="https://google.com/search" method="get" target="_blank">
+            <input type="hidden" name="sitesearch" />
+            <input type="text" name="q" placeholder="search..." class="search-bar"/>
+            <input type="submit" value="GO" class="submit-button">
+        </form>
+
+        <!-- BOOKMARK -->
+        <section class="bookmarks">
+            <a href="http://mail.google.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="http://mail.google.com" target="_blank">
+                <i class="fab fa-google-drive"></i>
+            </a>
+            <i class="fab fa-twitter" onclick="showTwitter()"></i>
+            <i class="fas fa-sticky-note" onclick="showNote()"></i>
+            <i class="fas fa-calculator" onclick="showCalculator()"></i>
+        </section>
+
+        <!-- CALCULATOR -->
+        <iframe class="calculator hover" id="calc" width="219" height="302" src="https://calculator-1.com/outdoor/?f=ffca39&r=ffffff" scrolling="no" frameborder="0"></iframe>
+    
+        
+
+        <!-- POST IT NOTE -->
+        <div id="notes">
+            <textarea placeholder="Monday..." class="post-it" id="monday" onkeyup="saveMonday()"></textarea>
+            <textarea placeholder="Tuesday..." class="post-it" id="tuesday" onkeyup="saveTuesday()"></textarea>
+            <textarea placeholder="Wednesday..." class="post-it" id="wednesday" onkeyup="saveWednesday()"></textarea>
+            <textarea placeholder="Thursday..." class="post-it" id="thursday" onkeyup="saveThursday()"></textarea>
+            <textarea placeholder="Friday..." class="post-it" id="friday" onkeyup="saveFriday()"></textarea>
+        </div>
+
+        <div class="twitter-wrapper" id="tweet">
+            <i class="far fa-times-circle exit" onclick="hideTweet()"></i>
+            <a class="twitter-timeline" href="https://twitter.com/mjmacfadden/lists/1576542010093232129?ref_src=twsrc%5Etfw">...loading</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div id="clock"></div>
+
+        <script src="jackiesScripts.js" async defer></script>
+    </body>
+</html>
